@@ -9,7 +9,7 @@
       <div class="nav-links" :class="{ 'active': mobileMenuOpen }">
         <a href="#about" @click="mobileMenuOpen = false">About</a>
         <a href="#skills" @click="mobileMenuOpen = false">Skills</a>
-        <a href="#projects" @click="mobileMenuOpen = false">Projects</a>
+       
         <a href="#contact" @click="mobileMenuOpen = false">Contact</a>
       </div>
 
