@@ -2,7 +2,7 @@
   <section id="projects" class="projects">
     <div class="section-header reveal">
       <h2 class="section-title">Projects</h2>
-      <p class="section-subtitle">Replace these cards with your real work.</p>
+      <p class="section-subtitle"></p>
     </div>
     
     <div class="projects-grid">

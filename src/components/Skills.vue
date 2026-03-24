@@ -20,7 +20,7 @@
 const skillCategories = [
   {
     name: 'Front-end',
-    tags: ['HTML', 'CSS', 'JavaScript', 'Accessibility', 'Responsive UI']
+    tags: ['HTML', 'CSS', 'JavaScript', 'Vue', 'Blade' ,'Responsive UI']
   },
   {
     name: 'Back-end',

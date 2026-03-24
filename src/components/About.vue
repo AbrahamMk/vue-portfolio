@@ -11,9 +11,8 @@
         <p>I design and build responsive web apps from database to UI. I enjoy shipping features that feel simple, run fast, and are accessible by default.</p>
         <ul class="about-list">
           <li>Laravel & PHP back-ends</li>
-          <li>Modern JavaScript and Vite</li>
-          <li>Design systems & component UI</li>
-          <li>Performance, SEO, and accessibility</li>
+          <li>Modern JavaScript and Vue</li>
+          <li>Design, Develop & Deploy systems</li>
         </ul>
       </div>
       

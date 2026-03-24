@@ -29,8 +29,7 @@
       
       <div class="contact-card glass reveal">
         <h3>Social</h3>
-        <p>Replace these links with your real profiles.</p>
-        
+
         <div class="social-grid">
           <a href="#" class="social-item glass">
             <div class="social-icon twitter">X</div>
