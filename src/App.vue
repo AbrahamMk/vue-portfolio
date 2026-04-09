@@ -10,12 +10,13 @@
       <Contact />
     </main>
     
+    <Projects :show="showProjects" @close="toggleProjects" />
     <Footer />
   </div>
 </template>
 
 <script setup>
-import { ref, onMounted, watch } from 'vue';
+import { ref, onMounted, watch, provide } from 'vue';
 import Navbar from './components/Navbar.vue';
 import Hero from './components/Hero.vue';
 import About from './components/About.vue';
@@ -23,8 +24,21 @@ import Skills from './components/Skills.vue';
 
 import Contact from './components/Contact.vue';
 import Footer from './components/Footer.vue';
+import Projects from './components/Projects.vue';
 
 const isDark = ref(false);
+const showProjects = ref(false);
+
+const toggleProjects = () => {
+  showProjects.value = !showProjects.value;
+  if (showProjects.value) {
+    document.body.style.overflow = 'hidden';
+  } else {
+    document.body.style.overflow = '';
+  }
+};
+
+provide('toggleProjects', toggleProjects);
 
 const toggleTheme = () => {
   isDark.value = !isDark.value;

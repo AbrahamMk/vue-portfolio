@@ -12,7 +12,7 @@
         
         <div class="contact-btns">
           <a href="mailto:abrahammekonnen197@gmail.com" class="btn btn-primary">Email me</a>
-          <button class="btn btn-secondary">Call</button>
+          <a href="tel:+251984721393" class="btn btn-secondary">Call me</a>
         </div>
         
         <div class="contact-info">
@@ -31,19 +31,19 @@
         <h3>Social</h3>
 
         <div class="social-grid">
-          <a href="#" class="social-item glass">
+          <a href="https://x.com/AbrahamMek97781" target="_blank" rel="noopener noreferrer" class="social-item glass">
             <div class="social-icon twitter">X</div>
             <span>Twitter</span>
           </a>
-          <a href="#" class="social-item glass">
+          <a href="https://linkedin.com/in/abraham-mekonnen-9b7917288" target="_blank" rel="noopener noreferrer" class="social-item glass">
             <div class="social-icon linkedin">in</div>
             <span>LinkedIn</span>
           </a>
-          <a href="#" class="social-item glass">
+          <a href="https://github.com/AbrahamMk" target="_blank" rel="noopener noreferrer" class="social-item glass">
             <div class="social-icon github">GH</div>
             <span>GitHub</span>
           </a>
-          <a href="#" class="social-item glass">
+          <a href="mailto:abrahammekonnen197@gmail.com" class="social-item glass">
             <div class="social-icon email">@</div>
             <span>Email</span>
           </a>

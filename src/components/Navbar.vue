@@ -9,7 +9,7 @@
       <div class="nav-links" :class="{ 'active': mobileMenuOpen }">
         <a href="#about" @click="mobileMenuOpen = false">About</a>
         <a href="#skills" @click="mobileMenuOpen = false">Skills</a>
-       
+        <a href="#" @click.prevent="openProjects">Projects</a>
         <a href="#contact" @click="mobileMenuOpen = false">Contact</a>
       </div>
 
@@ -27,7 +27,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, inject } from 'vue';
 
 defineProps({
   isDark: Boolean
@@ -36,6 +36,12 @@ defineProps({
 defineEmits(['toggle-theme']);
 
 const mobileMenuOpen = ref(false);
+const toggleProjects = inject('toggleProjects');
+
+const openProjects = () => {
+  mobileMenuOpen.value = false;
+  toggleProjects();
+};
 </script>
 
 <style scoped>
