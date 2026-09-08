@@ -1,8 +1,5 @@
 <script setup>
-import { inject } from 'vue';
 import profileImg from '../assets/profile.jpg';
-
-const toggleProjects = inject('toggleProjects');
 </script>
 
 <template>
@@ -14,7 +11,7 @@ const toggleProjects = inject('toggleProjects');
         <p class="subtitle">Full-stack developer focused on modern Laravel apps, accessible UI, and pragmatic engineering.</p>
         
         <div class="hero-btns">
-          <button @click="toggleProjects" class="btn btn-primary">View projects</button>
+          <a href="#projects" class="btn btn-primary">View projects</a>
           <a href="#contact" class="btn btn-secondary">Let's work together</a>
         </div>
         
@@ -27,9 +24,9 @@ const toggleProjects = inject('toggleProjects');
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
             LinkedIn
           </a>
-          <a href="mailto:abrahammekonnen197@gmail.com" class="social-tag glass" aria-label="Email">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            Email
+          <a href="https://github.com/AbrahamMk" target="_blank" rel="noopener noreferrer" class="social-tag glass" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4 4 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            GitHub
           </a>
         </div>
       </div>
@@ -42,16 +39,18 @@ const toggleProjects = inject('toggleProjects');
           </div>
           <div class="profile-info">
             <div class="info-item">
+              <span class="info-label">Role</span>
+              <span class="info-value">Full-Stack Developer</span>
+            </div>
+            <div class="info-item">
               <span class="info-label">Location</span>
               <span class="info-value">Addis Ababa, Ethiopia</span>
             </div>
             <div class="info-item">
-              <span class="info-label">Phone</span>
-              <span class="info-value">+251 984 721 393</span>
-            </div>
-            <div class="info-item">
-              <span class="info-label">Email</span>
-              <a href="mailto:abrahammekonnen197@gmail.com" class="info-value link">abrahammekonnen197@gmail.com</a>
+              <span class="info-label">Status</span>
+              <span class="info-value status-badge">
+                <span class="status-dot"></span> Available for projects
+              </span>
             </div>
           </div>
         </div>
@@ -207,9 +206,19 @@ h1 {
   font-size: 1rem;
 }
 
-.info-value.link:hover {
-  color: var(--primary);
-  text-decoration: underline;
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #10b981;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background: #10b981;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #10b981;
 }
 
 @media (max-width: 1024px) {

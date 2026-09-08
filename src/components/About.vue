@@ -65,7 +65,11 @@
 
 .about-card p {
   font-size: 1.1rem;
-  opacity: 0.8;
+  color: var(--text-muted-light);
+}
+
+.dark .about-card p {
+  color: var(--text-muted-dark);
 }
 
 .about-list {
@@ -109,8 +113,12 @@
 }
 
 .stat-desc {
-  font-size: 0.85rem;
-  opacity: 0.6;
+  font-size: 0.875rem;
+  color: var(--text-muted-light);
+}
+
+.dark .stat-desc {
+  color: var(--text-muted-dark);
 }
 
 .section-header {
