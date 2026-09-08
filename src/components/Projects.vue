@@ -77,7 +77,7 @@ const projects = [
     gradient: 'linear-gradient(135deg, rgba(168, 85, 247, 0.2) 0%, rgba(236, 72, 153, 0.2) 100%)',
     tags: ['Laravel', 'PHP', 'REST API', 'MySQL'],
     buttonText: 'Live Demo',
-    link: 'https://fms.artseb.studio',
+    link: 'https://lineup.elior-labs.com/passenger',
     github: 'https://github.com/AbrahamMk'
   }
 ];
