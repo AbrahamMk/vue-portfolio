@@ -11,7 +11,7 @@
         :key="index"
         class="project-card glass reveal"
       >
-        <div class="card-banner" :style="{ background: project.gradient }">
+        <div class="card-banner" :style="{ background: project.image ? `url(${project.image}) center/cover no-repeat` : project.gradient }">
           <div class="banner-badge">{{ project.category }}</div>
         </div>
         <div class="project-content">
@@ -49,11 +49,16 @@
 </template>
 
 <script setup>
+import lineupAddisImg from '../assets/lineup-addis.png';
+import restaurantImg from '../assets/dashboard.png';
+import bomImg from '../assets/business.png';
+
 const projects = [
   {
     title: 'Restaurant Management System',
     description: 'A comprehensive system for managing restaurant operations, including online customer ordering, inventory, and staff management.',
     category: 'Full Stack App',
+    image: restaurantImg,
     gradient: 'linear-gradient(135deg, rgba(99, 102, 241, 0.2) 0%, rgba(168, 85, 247, 0.2) 100%)',
     tags: ['Laravel', 'Vue', 'Inertia.js', 'Tailwind CSS'],
     buttonText: 'Live Demo',
@@ -64,16 +69,18 @@ const projects = [
     title: 'Transport Queue Management System',
     description: 'Efficiently manages transport queues and dispatch scheduling to streamline passenger flow and vehicle dispatching.',
     category: 'Web System',
+    image: lineupAddisImg,
     gradient: 'linear-gradient(135deg, rgba(59, 130, 246, 0.2) 0%, rgba(99, 102, 241, 0.2) 100%)',
     tags: ['Laravel', 'PHP', 'MySQL', 'Bootstrap'],
     buttonText: 'Live Demo',
-    link: 'https://la.artseb.studio/passenger',
+    link: 'https://lineup.elior-labs.com/',
     github: 'https://github.com/AbrahamMk'
   },
   {
     title: 'Bill Of Materials Management System',
     description: 'An enterprise web application for managing bill of materials, inventory tracking, orders, and manufacturing products.',
     category: 'Enterprise Software',
+    image: bomImg,
     gradient: 'linear-gradient(135deg, rgba(168, 85, 247, 0.2) 0%, rgba(236, 72, 153, 0.2) 100%)',
     tags: ['Laravel', 'PHP', 'REST API', 'MySQL'],
     buttonText: 'Live Demo',
